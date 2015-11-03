@@ -146,7 +146,7 @@ class low_high_strategy_t: public strategy_base_t	{
 
 private:
 
-	low_high_bet_t* mh_bet;
+	//low_high_bet_t* mh_bet;   //Not needed
 
 	std::default_random_engine m_generator;
 	std::uniform_int_distribution<int> m_bet_target;
@@ -199,12 +199,15 @@ private:
 
 		}
 
+		cirucuar_number_wheel_t()
+		: cirucuar_number_wheel_t(0)    {}
+
 		void set_val(const std::uint32_t index, const INTEGER val)	{
 			assert(index < m_count);
 			m_num_vec[m_index] = val;
 		}
 
-		void get_val(std::uint32_t index, INTEGER& val)	{
+		void get_val(std::uint32_t index, INTEGER& val) const	{
 			assert(index < m_count);
 			val	= m_num_vec[m_index];
 		}
@@ -214,7 +217,7 @@ private:
 			m_index = index;
 		}
 
-		void get_index(std::uint32_t& index)	{
+		void get_index(std::uint32_t& index) const	{
 			assert(index < m_count);
 			index	= m_index;
 		}
@@ -224,7 +227,7 @@ private:
 			m_index	= ((m_index == m_count) ? 0 : m_index);
 		}
 
-		INTEGER current()	{
+		INTEGER current() const	{
 			return m_num_vec[m_index];
 		}
 

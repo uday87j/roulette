@@ -38,6 +38,8 @@ namespace rt	{
 		}
 
 		payout_t& operator + (const payout_t& p)	{
+		    //TODO: Make this namespace function &
+		    //use += to implement it
 			this->m_val += p.m_val;
 			return *this;
 		}

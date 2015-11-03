@@ -23,7 +23,7 @@ namespace rt	{
 
 	private:
 
-		roulette_table_t* mh_rt;	// Have multiple in future
+		roulette_table_t* mh_rt;	// Have multiple in future, use std::vector
 		std::vector<player_intf*> mh_players;
 	};
 

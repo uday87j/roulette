@@ -29,7 +29,7 @@ namespace rt	{
 
 		virtual const std::string bet_name() const	{ return "Straight Bet"; }
 
-		virtual const std::string bet_desc() const	{ return "A “straight bet” is a bet on a single number. There are 38 possible bets, and they pay odds of 35 to 1. Each bin on the wheel pays one of the straight bets."; }
+		virtual const std::string bet_desc() const	{ return "A straight bet is a bet on a single number. There are 38 possible bets, and they pay odds of 35 to 1. Each bin on the wheel pays one of the straight bets."; }
 
 		virtual const std::string odds() const	{ return "35:1"; }
 
@@ -61,7 +61,7 @@ namespace rt	{
 
 		virtual const std::string bet_name() const	{ return "Street Bet"; }
 
-		virtual const std::string bet_desc() const	{ return "A “street bet” includes the three numbers in a single row, which pays 11:1. There are twelve of these bets on the table. A single bin selects one street bet; any of three bins make a street bet a winner."; }
+		virtual const std::string bet_desc() const	{ return "A street bet includes the three numbers in a single row, which pays 11:1. There are twelve of these bets on the table. A single bin selects one street bet; any of three bins make a street bet a winner."; }
 
 		virtual const std::string odds() const	{ return "11:1"; }
 
@@ -99,7 +99,7 @@ namespace rt	{
 
 			virtual const std::string bet_name() const	{ return "Line Bet"; }
 
-			virtual const std::string bet_desc() const	{ return "A “line bet” is a six number block, which pays 5:1. It is essentially two adjacent street bets. There are 11 such combinations.."; }
+			virtual const std::string bet_desc() const	{ return "A line bet is a six number block, which pays 5:1. It is essentially two adjacent street bets. There are 11 such combinations.."; }
 
 			virtual const std::string odds() const	{ return "11:1"; }
 
